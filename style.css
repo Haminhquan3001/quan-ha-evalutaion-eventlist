@@ -45,6 +45,7 @@ td {
   background-color: #008cba;
   text-align: center;
   border-radius: 10px;
+  font-size: 20px;
   cursor: pointer;
   color: #f0f0f0;
   margin-bottom: 15px;
@@ -60,7 +61,32 @@ td {
   width: 50px;
 }
 
-/* .test {
-  height: 100px;
-  width: 100px;
-} */
+.edit-button,
+.save-button,
+.create-event-button {
+  background-color: #008cba;
+  border: none;
+  margin-right: 5px;
+}
+.delete-button,
+.cancel-button {
+  background-color: #c94c4c;
+  border: none;
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 14px;
+    }
+  table {
+    width: 400px;
+  }
+  .edit-button,
+.delete-button,
+.create-event-button,
+.save-button,
+.cancel-button {
+  height: 30px;
+  width: 30px;
+}
+}
