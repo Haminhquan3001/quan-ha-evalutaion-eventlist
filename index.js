@@ -144,8 +144,6 @@ function addEvent() {
     .getElementById("add_event_button")
     .addEventListener("click", async (e) => {
       e.preventDefault();
-      console.log("clicked");
-
       generateNewRow();
     });
 }
@@ -203,8 +201,7 @@ function generateNewRow() {
     const eventName = document.getElementById("eventNameInput").value;
     const startDate = document.getElementById("eventStartDate").value;
     const endDate = document.getElementById("eventEndDate").value;
-    console.log(eventName, startDate, endDate);
-
+    
     const newEvent = {
       eventName,
       startDate,
